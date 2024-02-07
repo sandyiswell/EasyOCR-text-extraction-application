@@ -5,13 +5,13 @@ import easyocr
 
 app = Flask(__name__)
 
-# Global variables for max height and width
+# variables for max height and width
 max_height = 1500
 max_width = 1500
 
 
 def ocr_receipt_details(image):
-    global max_height, max_width
+    # global max_height, max_width
 
     height, width = image.shape[:2]
 
